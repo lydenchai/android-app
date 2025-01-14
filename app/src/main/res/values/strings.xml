@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Den Frist App</string>
+    <string name="section1_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section2_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section3_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section4_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="to">
+        To
+    </string>
+    <string name="subject">
+        Subject
+    </string>
+    <string name="message">
+        Message
+    </string>
+    <string name="send">
+        Send
+    </string>
+</resources>
