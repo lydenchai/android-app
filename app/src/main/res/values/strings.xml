@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">Den Frist App</string>
+    <string name="app_name">Travel App</string>
     <string name="section1_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section1_detail">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
     </string>
     <string name="section2_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
@@ -16,16 +23,28 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
-    <string name="to">
-        To
+    <string name="section5_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
-    <string name="subject">
-        Subject
+    <string name="section6_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
-    <string name="message">
-        Message
+    <string name="section7_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
-    <string name="send">
-        Send
+    <string name="section8_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section9_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
+    </string>
+    <string name="section10_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
 </resources>

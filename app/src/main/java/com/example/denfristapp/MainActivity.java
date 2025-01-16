@@ -30,40 +30,44 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        Toast.makeText(this, "Start", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        Toast.makeText(this, "Resume", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        Toast.makeText(this, "Pause", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        Toast.makeText(this, "Stop", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onRestart() {
-//        super.onRestart();
-//        Toast.makeText(this, "Restart", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        Toast.makeText(this, "Destroyed", Toast.LENGTH_SHORT).show();
-//    }
+    public void openListActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
+        startActivity(intent);
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(this, "Start", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "Resume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this, "Pause", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "Stop", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this, "Restart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "Destroyed", Toast.LENGTH_SHORT).show();
+    }
 }
