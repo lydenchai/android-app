@@ -1,6 +1,9 @@
 package com.example.denfristapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,10 @@ public class ItemDetailActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void backToList(View view) {
+        Intent intent = new Intent(ItemDetailActivity.this, ListItemActivity.class);
+        startActivity(intent);
     }
 }
