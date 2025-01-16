@@ -20,8 +20,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="131dp"
-                android:layout_height="155dp"
+                android:layout_width="81dp"
+                android:layout_height="109dp"
                 android:layout_marginBottom="34dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/aeu" />
@@ -31,7 +31,7 @@
                 android:layout_width="334dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Enter your email"
+                android:hint="@string/enter_your_email"
                 android:inputType="textEmailAddress"
                 android:padding="12dp" />
 
@@ -40,7 +40,7 @@
                 android:layout_width="334dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Enter your password"
+                android:hint="@string/enter_your_password"
                 android:inputType="textPassword"
                 android:padding="12dp" />
 
@@ -49,14 +49,14 @@
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Remember" />
+                android:text="@string/remember" />
 
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:onClick="onLogin"
-                android:text="Login" />
+                android:text="@string/login" />
 
         </LinearLayout>
     </ScrollView>

@@ -1,31 +1,32 @@
 package com.example.denfristapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class ItemDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_item_detail);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        Intent intent = getIntent();
+        String itemDescription = intent.getStringExtra("ITEM_DESCRIPTION");
+        int itemImageResId = intent.getIntExtra("ITEM_IMAGE", R.drawable.image1);
+
+        TextView itemDetailText = findViewById(R.id.itemDetailText);
+        itemDetailText.setText(itemDescription);
+
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setImageResource(itemImageResId);
     }
 
-    public void backToList(View view) {
+    public void onBack(View view) {
         Intent intent = new Intent(ItemDetailActivity.this, ListItemActivity.class);
         startActivity(intent);
     }
