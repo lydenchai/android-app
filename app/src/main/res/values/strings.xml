@@ -4,13 +4,6 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
-    <string name="section1_detail">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odio excepturi, error aperiam cupiditate expedita alias, iusto vel consequuntur facilis a nisi? Perferendis doloremque culpa nam totam dicta, necessitatibus harum.
-    </string>
     <string name="section2_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
@@ -47,4 +40,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
+    <string name="back">Back</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="remember">Remember</string>
+    <string name="login">Login</string>
+    <string name="intent_main_activity">Intent Main Activity</string>
+    <string name="list_item">List Item</string>
 </resources>

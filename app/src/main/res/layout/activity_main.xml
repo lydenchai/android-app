@@ -18,6 +18,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="16dp">
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="230dp"
@@ -25,6 +26,7 @@
                 android:layout_marginBottom="16dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/aeu" />
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
@@ -33,14 +35,16 @@
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"
                 android:padding="4dp"
-                android:text="Intent Main Activity"
+                android:text="@string/intent_main_activity"
                 android:textSize="14sp" />
+
             <Button
                 android:id="@+id/toList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="openListActivity"
-                android:text="List Item" />
+                android:text="@string/list_item" />
+            
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
