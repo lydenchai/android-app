@@ -47,4 +47,23 @@
     <string name="login">Login</string>
     <string name="intent_main_activity">Intent Main Activity</string>
     <string name="list_item">List Item</string>
+    <string name="place1">Kampot</string>
+    <string name="place2">Angkor Wat</string>
+    <string name="place3">Battam Bong</string>
+    <string name="place4">Kep</string>
+    <string name="place5">Koh Rong</string>
+    <string name="place6">Bangkok</string>
+    <string name="country">Cambodia</string>
+    <string name="price1">$2-$5</string>
+    <string name="price2">$5-$10</string>
+    <string name="price3">$10-$15</string>
+    <string name="price4">$15-$20</string>
+    <string name="price5">$5-$10</string>
+    <string name="price6">$8-$15</string>
+    <string name="rate1">4.5</string>
+    <string name="rate2">5.0</string>
+    <string name="rate3">4.0</string>
+    <string name="rate4">3.5</string>
+    <string name="rate5">4.2</string>
+    <string name="rate6">3.5</string>
 </resources>

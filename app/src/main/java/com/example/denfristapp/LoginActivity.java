@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
             return;
         }
-        Intent i = new Intent(LoginActivity.this, ListItemActivity.class);
+        Intent i = new Intent(LoginActivity.this, MainActivity.class);
         i.putExtra("email", email);
         i.putExtra("password", password);
         startActivity(i);
