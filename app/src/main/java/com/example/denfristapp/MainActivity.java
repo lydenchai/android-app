@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openDetailActivity(View view) {
-        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-        startActivity(intent);
-    }
-
     public void openListActivity(View view) {
         Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
         startActivity(intent);

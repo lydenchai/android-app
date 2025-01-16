@@ -2,6 +2,7 @@ package com.example.denfristapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,5 +24,10 @@ public class ItemDetailActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.imageView);
         imageView.setImageResource(itemImageResId);
+    }
+
+    public void onBack(View view) {
+        Intent intent = new Intent(ItemDetailActivity.this, ListItemActivity.class);
+        startActivity(intent);
     }
 }

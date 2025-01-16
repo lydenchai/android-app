@@ -17,14 +17,47 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="16dp">
-            <TextView
-                android:layout_width="wrap_content"
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="131dp"
+                android:layout_height="155dp"
+                android:layout_marginBottom="34dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aeu" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="334dp"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:textSize="18sp"
-                tools:ignore="MissingConstraints"
-                android:orientation="vertical"
-                android:gravity="center"/>
+                android:layout_marginBottom="16dp"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="334dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <Switch
+                android:id="@+id/remember"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Remember" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:onClick="onLogin"
+                android:text="Login" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
