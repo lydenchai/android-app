@@ -11,185 +11,43 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF">
+        android:background="#FFFFFF"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="16dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aeu"
+                android:onClick="openDetailActivity" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:padding="4dp"
+                android:text="Intent Main Activity"
+                android:textSize="14sp"
+                android:onClick="openDetailActivity" />
 
-                <ImageView
-                    android:layout_width="128dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image1" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:justificationMode="inter_word"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:text="@string/section1_text"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:layout_width="128dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image2" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/section2_text"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:justificationMode="inter_word" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:layout_width="126dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image3" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/section3_text"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:justificationMode="inter_word" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-                <ImageView
-                    android:layout_width="126dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image4" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/section4_text"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:justificationMode="inter_word" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:layout_width="126dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image4" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:justificationMode="inter_word"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:text="@string/section4_text"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-                <ImageView
-                    android:layout_width="126dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/image4" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/section4_text"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp"
-                    android:padding="4dp"
-                    android:justificationMode="inter_word" />
-            </LinearLayout>
+                android:text="Click to visit Other Intent"
+                android:onClick="openDetailActivity" />
         </LinearLayout>
-
-        <!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:paddingStart="16dp"-->
-<!--            android:paddingEnd="16dp"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <EditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:hint="@string/to" />-->
-
-<!--            <EditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:hint="@string/subject" />-->
-
-<!--            <EditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="0dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="top"-->
-<!--                android:hint="@string/message"-->
-<!--                android:minHeight="200dp"-->
-<!--                android:inputType="textMultiLine" />-->
-
-<!--            <Button-->
-<!--                android:layout_width="379dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="end"-->
-<!--                android:text="@string/send" />-->
-<!--        </LinearLayout>-->
-
-</ScrollView>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
