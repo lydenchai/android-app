@@ -121,7 +121,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Test"
+                            android:text="8,305K+"
                             android:textAlignment="center"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -153,7 +153,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Test"
+                            android:text="Khmer/English"
                             android:textAlignment="center"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -185,7 +185,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Test"
+                            android:text="Riel"
                             android:textAlignment="center"
                             android:textSize="14sp"
                             android:textStyle="bold" />

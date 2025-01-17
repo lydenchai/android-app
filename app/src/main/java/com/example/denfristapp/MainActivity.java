@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.country),
                 getString(R.string.country),
                 getString(R.string.country),
-                getString(R.string.country)
+                getString(R.string.country2)
         };
         String[] prices = {
                 getString(R.string.price1),

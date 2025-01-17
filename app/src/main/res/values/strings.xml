@@ -41,7 +41,7 @@
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
     <string name="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+        Cambodia is a treasure trove of historical sites, vibrant cities, and stunning natural landscapes.
     </string>
     <string name="back">Back</string>
     <string name="enter_your_email">Enter your email</string>
@@ -57,6 +57,7 @@
     <string name="place5">Koh Rong</string>
     <string name="place6">Bangkok</string>
     <string name="country">Cambodia</string>
+    <string name="country2">Thailand</string>
     <string name="price1">$2-$5</string>
     <string name="price2">$5-$10</string>
     <string name="price3">$10-$15</string>
