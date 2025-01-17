@@ -42,7 +42,7 @@
                 android:id="@+id/passwordInput"
                 android:layout_width="334dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="0dp"
                 android:background="@drawable/edit_text_border_selector"
                 android:hint="@string/enter_your_password"
                 android:inputType="textPassword"

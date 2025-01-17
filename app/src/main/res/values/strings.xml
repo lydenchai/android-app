@@ -66,4 +66,13 @@
     <string name="rate4">3.5</string>
     <string name="rate5">4.2</string>
     <string name="rate6">3.5</string>
+    <string name="todo1">Yoga</string>
+    <string name="todo2">Parachute</string>
+    <string name="todo3">Ice Skate</string>
+    <string name="todo4">Ball Paint</string>
+    <string name="todo5">Jogging</string>
+    <string name="todo6">Sleep</string>
+    <string name="thing_todo">Things to do</string>
+    <string name="must_visit">Must Visit</string>
+    <string name="city_details">City Details</string>
 </resources>
