@@ -40,6 +40,9 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
         Cras venenatis euismod malesuada. Curabitur tincidunt neque vitae semper placerat.
     </string>
+    <string name="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+    </string>
     <string name="back">Back</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_your_password">Enter your password</string>

@@ -26,17 +26,17 @@
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"
                 android:padding="4dp"
-                android:text="Hi, Dev"
+                android:text="Hi, Android Dev!"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
-                android:textColor="#FFFFFF"
                 android:padding="4dp"
                 android:text="Where do you want to go?"
+                android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
             <TextView
@@ -45,41 +45,40 @@
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"
                 android:padding="4dp"
-                android:textColor="#FFFFFF"
+                android:textColor="#eceaeb"
                 android:text="We filter out a best place for your next vacation"
-                android:textSize="12sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/searchInput"
-                android:layout_width="386dp"
-                android:layout_height="43dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/search_border"
                 android:hint="Search..."
                 android:inputType="textEmailAddress"
                 android:outlineProvider="background"
-                android:background="@drawable/search_border"
                 android:padding="12dp"
                 android:textSize="16sp" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="114dp"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
                     android:id="@+id/places"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="0dp">
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="99dp"
                         android:layout_marginEnd="10dp"
-                        android:orientation="vertical"
-                        android:padding="0dp">
+                        android:orientation="vertical">
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -98,6 +97,7 @@
                     android:lineSpacingExtra="4dp"
                     android:padding="4dp"
                     android:text="You might like!"
+                    android:textStyle="bold"
                     android:textSize="20sp"
                     android:layout_marginBottom="16dp"/>
 

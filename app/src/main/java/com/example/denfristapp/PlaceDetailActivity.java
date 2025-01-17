@@ -18,14 +18,22 @@ public class PlaceDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_place_detail);
 
         Intent intent = getIntent();
-        String itemDescription = intent.getStringExtra("ITEM_DESCRIPTION");
         int itemImageResId = intent.getIntExtra("ITEM_IMAGE", R.drawable.image1);
-
-        TextView itemDetailText = findViewById(R.id.placeName);
-        itemDetailText.setText(itemDescription);
+        String itemName = intent.getStringExtra("ITEM_NAME");
+        String itemInPlace = intent.getStringExtra("IN_PLACE");
+        String description = intent.getStringExtra("DESCRIPTION");
 
         ImageView imageView = findViewById(R.id.placeImage);
         imageView.setImageResource(itemImageResId);
+
+        TextView itemDetailText = findViewById(R.id.placeName);
+        itemDetailText.setText(itemName);
+
+        TextView inPlace = findViewById(R.id.inPlace);
+        inPlace.setText(itemInPlace);
+
+        TextView placeDescription = findViewById(R.id.description);
+        placeDescription.setText(description);
 
         LinearLayout thingsTodo = findViewById(R.id.toDoList);
         LinearLayout placeContainer = findViewById(R.id.morePlaces);
@@ -77,6 +85,15 @@ public class PlaceDetailActivity extends AppCompatActivity {
                 getString(R.string.rate5),
                 getString(R.string.rate6)
         };
+        String[] descriptions = {
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+        };
+
         LayoutInflater inflater = LayoutInflater.from(this);
 
         for (int i = 0; i < things.length; i++) {
@@ -106,7 +123,7 @@ public class PlaceDetailActivity extends AppCompatActivity {
             rate.setText(rates[i]);
 
             final int index = i;
-            morePlaceView.setOnClickListener(v -> openPlaceDetail(texts[index], images[index]));
+            morePlaceView.setOnClickListener(v -> openPlaceDetail(images[index], texts[index], countries[index], descriptions[index]));
 
             placeContainer.addView(morePlaceView);
         }
@@ -117,17 +134,19 @@ public class PlaceDetailActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openTodoDetail(String itemDescription, int itemImageResId) {
+    private void openTodoDetail(String itemName, int itemImage) {
         Intent intent = new Intent(PlaceDetailActivity.this, PlaceDetailActivity.class);
-        intent.putExtra("ITEM_DESCRIPTION", itemDescription);
-        intent.putExtra("ITEM_IMAGE", itemImageResId);
+        intent.putExtra("ITEM_NAME", itemName);
+        intent.putExtra("ITEM_IMAGE", itemImage);
         startActivity(intent);
     }
 
-    private void openPlaceDetail(String itemDescription, int imageResId) {
+    private void openPlaceDetail(int itemImage, String itemName, String inPlace, String description) {
         Intent intent = new Intent(PlaceDetailActivity.this, PlaceDetailActivity.class);
-        intent.putExtra("ITEM_DESCRIPTION", itemDescription);
-        intent.putExtra("ITEM_IMAGE", imageResId);
+        intent.putExtra("ITEM_IMAGE", itemImage);
+        intent.putExtra("ITEM_NAME", itemName);
+        intent.putExtra("IN_PLACE", inPlace);
+        intent.putExtra("DESCRIPTION", description);
         startActivity(intent);
     }
 }

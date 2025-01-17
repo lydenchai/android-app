@@ -62,7 +62,9 @@
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:onClick="onLogin"
-                android:text="@string/login" />
+                android:text="@string/login"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"/>
 
         </LinearLayout>
     </ScrollView>

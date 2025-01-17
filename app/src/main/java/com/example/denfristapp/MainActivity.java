@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout itemContainer = findViewById(R.id.places);
         LinearLayout placeContainer = findViewById(R.id.morePlaces);
 
-        // Arrays for images, texts, and countries
         int[] imageResIds = {
                 R.drawable.image1,
                 R.drawable.image2,
@@ -61,24 +60,32 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.rate5),
                 getString(R.string.rate6)
         };
+        String[] descriptions = {
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+                getString(R.string.description),
+        };
 
         LayoutInflater inflater = LayoutInflater.from(this);
 
         for (int i = 0; i < imageResIds.length; i++) {
-            // Inflate the "places" layout
             View itemView = inflater.inflate(R.layout.places, itemContainer, false);
             ImageView itemImage = itemView.findViewById(R.id.placeImage);
             TextView itemText = itemView.findViewById(R.id.placeName);
+            TextView itemPlace = itemView.findViewById(R.id.inPlace);
 
             itemImage.setImageResource(imageResIds[i]);
             itemText.setText(texts[i]);
+            itemPlace.setText(countries[i]);
 
-            final int index = i; // Needed for use inside the lambda
-            itemView.setOnClickListener(v -> openPlaceDetail(texts[index], imageResIds[index]));
+            final int index = i;
+            itemView.setOnClickListener(v -> openPlaceDetail(texts[index], imageResIds[index], countries[index], descriptions[index]));
 
             itemContainer.addView(itemView);
 
-            // Inflate the "more_places" layout
             View morePlaceView = inflater.inflate(R.layout.more_places, placeContainer, false);
             ImageView placeImg = morePlaceView.findViewById(R.id.morePlaceImg);
             TextView placeName = morePlaceView.findViewById(R.id.morePlaceName);
@@ -92,16 +99,18 @@ public class MainActivity extends AppCompatActivity {
             price.setText(prices[i]);
             rate.setText(rates[i]);
 
-            morePlaceView.setOnClickListener(v -> openPlaceDetail(texts[index], imageResIds[index]));
+            morePlaceView.setOnClickListener(v -> openPlaceDetail(texts[index], imageResIds[index], countries[index], descriptions[index]));
 
             placeContainer.addView(morePlaceView);
         }
     }
 
-    private void openPlaceDetail(String itemDescription, int imageResId) {
+    private void openPlaceDetail(String itemName, int imageResId, String inPlace, String description) {
         Intent intent = new Intent(MainActivity.this, PlaceDetailActivity.class);
-        intent.putExtra("ITEM_DESCRIPTION", itemDescription);
+        intent.putExtra("ITEM_NAME", itemName);
         intent.putExtra("ITEM_IMAGE", imageResId);
+        intent.putExtra("IN_PLACE", inPlace);
+        intent.putExtra("DESCRIPTION", description);
         startActivity(intent);
     }
 

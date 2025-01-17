@@ -12,7 +12,8 @@
         android:layout_gravity="center"
         android:clipToOutline="true"
         android:outlineProvider="background"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:background="@drawable/circular_background"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +31,8 @@
                 android:id="@+id/morePlaceName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/country"
@@ -57,15 +59,16 @@
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:layout_gravity="end" />
+                android:textSize="14sp"
+                android:layout_gravity="end"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#707275"
-                android:textSize="10sp"
+                android:textColor="#777979"
+                android:textSize="12sp"
                 android:layout_gravity="end" />
         </LinearLayout>
     </LinearLayout>

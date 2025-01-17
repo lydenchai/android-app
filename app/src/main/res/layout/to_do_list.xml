@@ -11,7 +11,7 @@
         android:layout_width="65dp"
         android:layout_height="71dp"
         android:layout_weight="0"
-        android:backgroundTint="@android:color/black"
+        android:backgroundTint="@android:color/darker_gray"
         android:shape="oval" />
 
     <TextView
