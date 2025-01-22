@@ -134,7 +134,7 @@
                             android:text="@string/population"
                             android:textAlignment="center"
                             android:textColor="#717075"
-                            android:textSize="14sp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
 
                     <View
@@ -166,7 +166,7 @@
                             android:text="@string/language"
                             android:textAlignment="center"
                             android:textColor="#717075"
-                            android:textSize="14sp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
 
                     <View
@@ -198,7 +198,7 @@
                             android:text="@string/currency"
                             android:textAlignment="center"
                             android:textColor="#717075"
-                            android:textSize="14sp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
