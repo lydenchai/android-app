@@ -79,4 +79,10 @@
     <string name="thing_todo">Things to do</string>
     <string name="must_visit">Must Visit</string>
     <string name="city_details">City Details</string>
+    <string name="population">Population</string>
+    <string name="total_population">8,305K+</string>
+    <string name="language">Language</string>
+    <string name="languages">Khmer/English</string>
+    <string name="riel">Riel</string>
+    <string name="currency">Currency</string>
 </resources>
